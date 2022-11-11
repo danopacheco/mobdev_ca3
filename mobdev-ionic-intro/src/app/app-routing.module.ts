@@ -11,6 +11,34 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'characters',
+    loadChildren: () => import('./pages/characters/characters.module').then( m => m.CharactersPageModule)
+  },
+  {
+    path: 'episodes',
+    loadChildren: () => import('./pages/episodes/episodes.module').then( m => m.EpisodesPageModule)
+  },
+  {
+    path: 'quotes',
+    loadChildren: () => import('./pages/quotes/quotes.module').then( m => m.QuotesPageModule)
+  },
+  {
+    path: 'death',
+    loadChildren: () => import('./pages/death/death.module').then( m => m.DeathPageModule)
+  },
+  {
+    path: 'count',
+    loadChildren: () => import('./pages/count/count.module').then( m => m.CountPageModule)
+  },
+  {
+    path: 'death',
+    loadChildren: () => import('./pages/death/death.module').then( m => m.DeathPageModule)
+  },
+  {
+    path: 'death-count',
+    loadChildren: () => import('./pages/death-count/death-count.module').then( m => m.DeathCountPageModule)
+  },
 ];
 
 @NgModule({
