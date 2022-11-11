@@ -28,6 +28,10 @@ const routes: Routes = [
     path: 'death-count',
     loadChildren: () => import('./pages/death-count/death-count.module').then( m => m.DeathCountPageModule)
   },
+  {
+    path: 'tab',
+    loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)
+  },
 ];
 
 @NgModule({
