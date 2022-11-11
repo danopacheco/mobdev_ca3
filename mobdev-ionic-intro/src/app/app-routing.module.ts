@@ -2,8 +2,16 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {  path: '', loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)}
-
+  {  path: '', loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)},
+  {
+    path: 'character-details',
+    loadChildren: () => import('./pages/character-details/character-details.module').then( m => m.CharacterDetailsPageModule)
+  },
+  {
+    path: 'episodes-details',
+    loadChildren: () => import('./pages/episodes-details/episodes-details.module').then( m => m.EpisodesDetailsPageModule)
+  }
+  //{ path: 'characters', loadChildren: () => import('./pages/characters/characters.module').then(m => m.CharactersPageModule) },
 ];
 
 @NgModule({
