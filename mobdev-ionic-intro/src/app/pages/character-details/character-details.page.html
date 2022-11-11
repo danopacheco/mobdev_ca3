@@ -1,9 +1,16 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Character-details</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start" defaultHref="/tab/Characters">
+      <ion-back-button></ion-back-button>
+    <ion-title>{{ Characters.title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card *ngIf="Characters">
+    <ion-card-content>
+      {{ Characters.opening_crawl }}
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

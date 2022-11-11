@@ -6,14 +6,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
 
-  constructor(private http: Http:CLient) { }
+  constructor(private http: HttpClient) { }
 
   getCharacters(){
     return this.http.get('https://www.breakingbadapi.com/api/characters');
   }
   
 
-  getCharacters(id){
+  getCharacter(id){
     return this.http.get(`https://www.breakingbadapi.com/api/characters/${id}`);
   }
 }
