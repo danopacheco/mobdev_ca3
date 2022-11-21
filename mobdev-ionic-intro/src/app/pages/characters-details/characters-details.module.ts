@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CharacterDetailsPageRoutingModule } from './character-details-routing.module';
+import { CharacterDetailsPageRoutingModule } from './characters-details-routing.module';
 
-import { CharacterDetailsPage } from './character-details.page';
+import { CharacterDetailsPage } from './characters-details.page';
 
 @NgModule({
   imports: [
