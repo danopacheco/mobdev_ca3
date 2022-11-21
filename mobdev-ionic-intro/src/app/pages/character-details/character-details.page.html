@@ -1,13 +1,15 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-buttons slot="start" defaultHref="/tab/Characters">
+    <ion-buttons slot="start" defaultHref="/tab/(characters:characters)">
       <ion-back-button></ion-back-button>
-    <ion-title>{{ Characters.title }}</ion-title>
+    <ion-title>{{ character?.name }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card *ngIf="Characters">
+<ion-content padding="">
+  <ion-card *ngIf="Characters" class="movie-card">
+    <ion-card-header>Nickname {{ character.nickname }}: Occupation {{ character.occupation }}</ion-card-header>
+    
     <ion-card-content>
       {{ Characters.opening_crawl }}
     </ion-card-content>
