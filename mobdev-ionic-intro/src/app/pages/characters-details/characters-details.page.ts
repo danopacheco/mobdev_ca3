@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
-import { ApiService } from 'src/app/services/api.service';
+//import { ApiService } from 'src/app/services/api.service';
+import { ApiService } from '../../services/api.service';
 
 @Component({
-  selector: 'app-character-details',
-  templateUrl: './character-details.page.html',
-  styleUrls: ['./character-details.page.scss'],
+  selector: 'app-characters-details',
+  templateUrl: './characters-details.page.html',
+  styleUrls: ['./characters-details.page.scss'],
 })
-export class CharacterDetailsPage implements OnInit {
+export class CharactersDetailsPage implements OnInit {
   character: any;
-  characterId: string;
+  characterId =null;
 
   constructor(private activatedRoute: ActivatedRoute, private api: ApiService) { }
 

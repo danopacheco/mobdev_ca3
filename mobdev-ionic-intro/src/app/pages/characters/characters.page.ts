@@ -19,10 +19,10 @@ export class CharactersPage implements OnInit {
   ngOnInit() {
     this.characters = this.api.getCharacters();
     }
-    openDetails(characters) {
-      let split = characters.url.split('/');
+    openDetails(character) {
+      let split = character.url.split('/');
       let characterId = split[split.length-2];
-      this.router.navigateByUrl(`/tabs/films/${characterId}`);
+      this.router.navigateByUrl(`/tabs/characters/${characterId}`);
     }
 
 }

@@ -7,11 +7,10 @@
 </ion-header>
 
 <ion-content padding="">
-  <ion-card *ngIf="Characters" class="movie-card">
+  <ion-card *ngIf="Character" class="movie-card">
     <ion-card-header>Nickname {{ character.nickname }}: Occupation {{ character.occupation }}</ion-card-header>
     
     <ion-card-content>
-      {{ Characters.opening_crawl }}
     </ion-card-content>
   </ion-card>
 

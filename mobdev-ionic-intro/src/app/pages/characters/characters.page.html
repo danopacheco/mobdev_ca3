@@ -6,9 +6,10 @@
 
 <ion-content>
   <ion-list>
-    <ion-item button detail lines="inset" *ngFor="let Characters of (Characters | async)?.results" (click)="openDetails(Characters)">
-      {{ Characters.title }}
-    </ion-item>
+  <ion-item button detail lines="@inset" *ngFor="let character of (characters | async)" (click)="openDetails(character)">	
+    {{ character.name }}
+  </ion-item>
+    
   </ion-list>
 
 </ion-content>

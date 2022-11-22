@@ -9,7 +9,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getCharacters(){
-    return this.http.get('https://www.breakingbadapi.com/api/characters');
+    return this.http.get('https://www.breakingbadapi.com/api/characters/');
   }
   
 
