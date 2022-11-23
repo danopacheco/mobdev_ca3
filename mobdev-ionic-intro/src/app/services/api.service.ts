@@ -28,6 +28,14 @@ export class ApiService {
 getQuotes(){
   return this.http.get('https://www.breakingbadapi.com/api/quotes/');
 }
+getDeathcount(){
+  return this.http.get('https://www.breakingbadapi.com/api/deaths/');
+}
+
+getDeathcounts(id){
+  return this.http.get(`https://www.breakingbadapi.com/api/deaths/${id}`);
+}
+
 
 
 
