@@ -51,7 +51,7 @@ const routes: Routes = [
     },
     {
       path: '',
-      redirectTo: 'tab',
+      redirectTo: '/tab/characters',
       pathMatch: 'full'
     }
 ];
